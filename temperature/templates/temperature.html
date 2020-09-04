@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         #temperatures {
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+         }
+         #temperatures td, #temperatures th {
+          border: 1px solid #ddd;
+          padding: 8px;
+         }
+         #temperatures tr:nth-child(even){background-color: #f2f2f2;}
+         #temperatures tr:hover {background-color: #ddd;}
+         #temperatures th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+         }
+      </style>
+   </head>
+   <body>
+      <table id="temperatures">
+         <tr>
+            <th>ID</th>
+            <th>TimeStamp</th>
+            <th>Temperature Reading</th>
+            <th>Duration</th>
+         </tr>
+         {% for temperature_obj in temperatures %} 
+         <tr>
+            <td>{{temperature_obj.uuid}}</td>
+            <td>{{temperature_obj.timestamp}}</td>
+            <td>{{temperature_obj.temperature}}</td>
+            <td>{{temperature_obj.duration}}</td>
+         </tr>
+         {% endfor %} 
+      </table>
+   </body>
+</html>
