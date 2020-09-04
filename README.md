@@ -12,7 +12,7 @@ SmartSteel is a Django web application that list down the temperatures informati
 
 First clone the project into a directory.
 ```bash
-   git clone <GIT-PROJECT-URL>
+   git clone git@github.com:asadiqbal08/SmartSteel.git
 ```
 Create a virtual environment and activate it. Further [reading](https://sourabhbajaj.com/mac-setup/Python/virtualenv.html) to virtual environment for mac.
 ```bash
